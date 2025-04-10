@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="author" content="Savannah Maiers">
     <meta name="description" content="This is the home page of my website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Savannah UX/UI Designer MN/WI</title>
 </head>
     <body>
         <!--For the header-->
-            <header>
+            <header id="navigation">
                 <!--For the navigation-->
                 <div>
-                    <div><a href="#">Savannah Maiers</a></div>
+                    <div><a href="index.html">Savannah Maiers</a></div>
                     <nav>
                         <ul>
                             <li><a href="index.html">Work</a></li>
@@ -24,16 +30,16 @@
    
         <!--For the hero section-->
         <main>
-            <div>
+            <div id="introduction">
                 <div>
                     <h1>
-                        Hello! My name is Savannah Maiers.<br><span> I am a UX designer based in Wisconsin.</span>
+                        Hello! My name is Savannah Maiers.<span> I am a UX designer based in Wisconsin.</span>
                     </h1>
                 </div>
             </div>
    
         <!--For my work section-->
-            <div>
+            <div id="projects">
                 <div>
                     <h2>My projects</h2>
                     <div>
@@ -48,7 +54,7 @@
                             <p>
                             Animal Care Community is a mobile expert app used to connect users with experts in a wide variety of animal care fields. The app is designed for animal care professionals who are interested in building connections outside of their organization and learning from leading experts in their respective fields.
                             </p>
-                            <a href="animal_care_community.html" target="_blank" title="Will open in new tab">View Project</a>
+                            <a href="animal_care_community.html" class="button" target="_blank" title="Will open in new tab" >View Project</a>
                         </div>
                     </div>
                     <div>
@@ -63,7 +69,7 @@
                             <p>
                             Vocab Expansion is a vocabulary and language learning app that is gamified to provide a more enjoyable learning experience for users. This app includes progress tracking, notification of streak, and interactions with friends. This is a great app for users who are looking to increase their vocabulary or learn a new language.
                             </p>
-                            <a href="#">View Project</a>
+                            <a href="#" class="button">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -77,7 +83,7 @@
                 Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+12245958910">+1 224-595-8910</a>. Prefer sending an email?
                 </p>
                 <div>
-                    <a href="mailto:savannahmaiers@gmail.com">Email me</a>
+                    <a href="mailto:savannahmaiers@gmail.com" class="button contact">Email me</a>
                 </div>
                 <div>
                     <!--Social Media Layout and Placeholders-->
