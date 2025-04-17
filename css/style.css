@@ -32,7 +32,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.55em;
+  font-size: 1.80em;
   font-weight: 600;
 }
 
@@ -42,28 +42,34 @@ h1 {
 }
   
 h2 {
-  font-size: 2.25em;
+  font-size: 1.60em;
   font-weight: 550;
 }
   
 h3 {
-  font-size: 1.75em;
+  font-size: 1.30em;
   font-weight: 500;
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1.10em;
   font-weight: 400;
+}
+
+p {
+  font-size: 0.90em;
 }
 
 /*setting images to full-width*/
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /*CSS code for links*/
 a {
-  color: #ebebe4;
+  color: #0000ff;
   text-decoration: none; /* No underlining */
 }
 
@@ -93,6 +99,7 @@ a:focus {
   background-color: #0000ff;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #000000; /* width of the border, type, color */
@@ -136,26 +143,23 @@ a:focus {
 /*style the <header> element*/
 header {
   background-color: #1d7581;
-  border-bottom: 1px solid #1d7581;
   text-align: center;
-  width: [object Object]px; 
-	height: [object Object]px;  
-	border: solid #4A4A4A 1px; 
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ;  
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #1d7581; 
   position: relative; 
+  box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75)
 }
 
 /*style the logo*/
 .logo{
-  font-weight: 700;
-  text-transform: uppercase;
+  max-width: 250px;
 }
 
 /*Navigation Styling*/
 nav {
   display: inline-block;
+  width: 100%;
 }
 
 nav > ul {
@@ -168,7 +172,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 30px;
+  padding: 0 15px;
   font-weight: 700;
   color: #ebebe4;
 }
@@ -201,14 +205,14 @@ nav > ul > li > a:active {
 /*Style the social icons*/
 .social-icon {
   display: block;
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .social-icon a {
   display: inline-block;
   width: 32px;
-  text-align: left;
+  text-align: center;
   margin: 0px 5px;
 }
 
@@ -231,6 +235,126 @@ nav > ul > li > a:active {
 
 .center {
   text-align: center;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*Media Queries*/
+
+/*Media query for screens 640px and up (medium devices)*/
+@media only screen and (min-width: 640px) { 
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 { 
+    margin-top: 0;
+  }
+
+  #index-page h4 { 
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+/*Media query for screens 1024px and up (large devices)*/
+@media only screen and (min-width: 1024px) {
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-lg-7 {
+  width: 60%;
+}
+
+.col-lg-5 {
+  width: 40%;
+}
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*Animations*/
+
+/*Sun animation*/
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+/*Long way
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}*/
+
+/*Short way*/
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+/*Cloud animation*/
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+/*Long way
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}*/
+
+/*Short way*/
+.cloud-front {
+  animation: 20s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 20s cloud-move-reverse infinite alternate linear;
 }
 
 
