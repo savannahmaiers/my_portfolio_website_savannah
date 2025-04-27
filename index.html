@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe923feb63.js" crossorigin="anonymous"></script>
     <title>Savannah UX/UI Designer MN/WI</title>
 </head>
     <body id="index-page">
@@ -17,7 +18,7 @@
             <header>
                 <!--For the navigation-->
                 <div class="container">
-                    <div>
+                    <div class="navtoggle" id="myNavtoggle">
                         <a href="index.html">
                             <img src="img/website_img/logo/porfolio_logo.svg" class="logo" alt="Logo">
                         </a>
@@ -25,10 +26,11 @@
                         <ul class="navigation">
                             <li class="active"><a href="index.html" class="circleBehind">Work</a></li>
                             <li><a href="about.html" class="circleBehind">About</a></li>
-                            <li><a href="#contact" class="circleBehind">Contact</a></li>
+                            <li><a href="#contact" class="circleBehind" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
                         </ul>
                     </nav>
-                </div>
+                    </div>
                 </div>
             </header>
    
@@ -54,11 +56,13 @@
                             </picture>
                         </div>
                         <div class="column col-md-6 col-lg-5">
-                        <h4>Animal Care Community Expert App</h4>
+                        <h3>Animal Care Community Expert App</h3>
                             <p>
                             Animal Care Community is a mobile expert app used to connect users with experts in a wide variety of animal care fields. The app is designed for animal care professionals who are interested in building connections outside of their organization and learning from leading experts in their respective fields.
                             </p>
-                            <a href="animal_care_community.html" class="button">View Project</a>
+                            <div class="center">
+                                <a href="animal_care_community.html" class="button">View Project</a>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -69,11 +73,13 @@
                             </picture>
                         </div>
                         <div class="column col-md-6 col-lg-5">
-                        <h4>Vocab Expansion Vocabulary App</h4>
+                        <h3>Vocab Expansion Vocabulary App</h3>
                             <p>
                             Vocab Expansion is a vocabulary and language learning app that is gamified to provide a more enjoyable learning experience for users. This app includes progress tracking, notification of streak, and interactions with friends. This is a great app for users who are looking to increase their vocabulary or learn a new language.
                             </p>
-                            <a href="#" class="button">View Project</a>
+                            <div class="center">
+                                <a href="#" class="button">View Project</a>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -681,11 +687,13 @@
                             </picture>
                         </div>
                         <div class="column col-md-6 col-lg-5">
-                        <h4>Vocab Expansion Vocabulary App</h4>
+                        <h3>Vocab Expansion Vocabulary App</h3>
                             <p>
                             Vocab Expansion is a vocabulary and language learning app that is gamified to provide a more enjoyable learning experience for users. This app includes progress tracking, notification of streak, and interactions with friends. This is a great app for users who are looking to increase their vocabulary or learn a new language.
                             </p>
-                            <a href="#" class="button">View Project</a>
+                            <div class="center">
+                                <a href="#" class="button">View Project</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -710,6 +718,7 @@
                 <p>Copyright Savannah Maiers 2025</p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
