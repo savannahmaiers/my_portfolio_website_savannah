@@ -206,6 +206,7 @@ nav > ul > li > a:active {
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
+  text-align: center;
 }
 
 .navtoggle.responsive li  {
