@@ -143,9 +143,8 @@ a:focus {
 /*style the <header> element*/
 header {
   background-color: #1d7581;
-  text-align: center;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   border-bottom: 1px solid #1d7581; 
   position: relative; 
   box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75)
@@ -153,22 +152,15 @@ header {
 
 /*style the logo*/
 .logo{
-  max-width: 250px;
+  max-width: 150px;
 }
 
 /*Navigation Styling*/
-nav {
-  display: inline-block;
-  width: 100%;
-}
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -189,6 +181,41 @@ nav > ul > li > a:focus {
 
 nav > ul > li > a:active {
   color: #41bf87;
+}
+
+/*Style the hamburger icon*/
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #4a4a4a;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -256,6 +283,14 @@ nav > ul > li > a:active {
     margin-top: 4px;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
   #hero span {
     display: block;
   }
@@ -299,6 +334,24 @@ nav > ul > li > a:active {
 
 .col-lg-5 {
   width: 40%;
+}
+
+.logo{
+  max-width: 250px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+.aboutimage {
+  float: right;
+  width: 50%;
+  margin-left: 20px;
 }
 }
 
