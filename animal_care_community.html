@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe923feb63.js" crossorigin="anonymous"></script>
     <title>Animal Care Community Expert App</title>
 </head>
     <body>
@@ -17,18 +18,19 @@
         <header>
             <!--For the navigation-->
             <div class="container">
-                <div>
+                <div class="navtoggle" id="myNavtoggle">
                     <a href="index.html">
                         <img src="img/website_img/logo/porfolio_logo.svg" class="logo" alt="Logo">
                     </a>
                 <nav>
                     <ul class="navigation">
-                        <li class="active"><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="active"><a href="index.html" class="circleBehind">Work</a></li>
+                        <li><a href="about.html" class="circleBehind">About</a></li>
+                        <li><a href="#contact" class="circleBehind" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
                     </ul>
                 </nav>
-            </div>
+                </div>
             </div>
         </header>
 
@@ -348,7 +350,9 @@
                             <div>
                                 <p>Before this project, I had no previous design experience. From starting with sketches to submitting my last iteration of the Animal Care Community Expert App, I am extremely proud of all my work and all that I have learned. Through each iteration, I got to try something new and learn how to use more tools in Figma. As I worked on each new iteration, I always had the feedback and needs of users on my mind.</p>
                                 <p>When I got to perform user testing, I was able to make the most adjustments to my design. This testing allowed me to connect more with potential users and gain more insight into the pain points that users experienced with earlier iterations of the app. For example, in the first high-fidelity iteration, I received feedback from users that they were unsettled by the subscription plans wireframe. They believed that the app would have free use, which it does, but it was confusing with how I originally set it up. This helped me learn that I need to be detailed, clear, and concise with each wireframe. Lastly, gaining a better understanding of material design was a great asset, I learned how to give a more seamless and transferable experience for users when interacting with my app.</p>
-                                <a href="https://www.figma.com/proto/IsquQs2oK3aM9IDwmgS1Ti/UXI-5.8-iterations?node-id=0-1&t=2RhKonba4CbFHynO-1" class="button" target="_blank" title="This will open in a new tab">Click here to see lastest iteration</a>
+                                <div class="center">
+                                    <a href="https://www.figma.com/proto/IsquQs2oK3aM9IDwmgS1Ti/UXI-5.8-iterations?node-id=0-1&t=2RhKonba4CbFHynO-1" class="button" target="_blank" title="This will open in a new tab">Click here to see lastest iteration</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -374,6 +378,7 @@
                 <p>Copyright Savannah Maiers 2025</p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
