@@ -2,8 +2,8 @@
 Color Guide
 
 Colors used:
-Background color (Alice Blue): #f0f8ff
-Secondary color: 000000
+Background color (Midnight green): #0F4F56
+Secondary color: 000000, #f0f8ff, #ebebe4
 Link colors:
 unclicked; #003366
 */
@@ -19,7 +19,7 @@ unclicked; #003366
 /*default body settings - mobile first*/
 
 body{
-    background-color: #f0f8ff;
+    background-color: #ebebe4;
     font-family: 'Roboto', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
@@ -57,7 +57,7 @@ h4 {
 }
 
 p {
-  font-size: 0.90em;
+  font-size: 1.00em;
 }
 
 /*setting images to full-width*/
@@ -69,12 +69,12 @@ img {
 
 /*CSS code for links*/
 a {
-  color: #0000ff;
+  color: #0F4F56;
   text-decoration: none; /* No underlining */
 }
 
 a:hover {
-  color: #41bf87;
+  color: #ebebe4;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
   
@@ -83,26 +83,25 @@ a:visited { /* visited link */
 }
 
 a:active { /* selected link */
-  color: #41bf87;
+  color: #ebebe4;
 }
 
 /*Pseudo classes for accessibility across the Web*/
 a:hover,
 a:focus {
-  color: #41bf87;
+  color: #ebebe4;
   text-decoration: underline;
 }
 
 /*CSS code for the button class*/
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #0000ff;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #0F4F56;
+  color: #ebebe4; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #000000; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -120,20 +119,20 @@ a:focus {
 /*button rules for the mailto button*/
 .button.contact {
   background-color: transparent;
-  color: #0000ff;
+  color: #0F4F56;
   text-transform: uppercase;
-  border: 2px solid #0000ff;
+  border: 2px solid #0F4F56;
 }
 
 /*button class hover and active state*/
 .button.contact:hover {
-  background-color: #0000ff;
-  color: #ffffff;
+  background-color: #0F4F56;
+  color: #ebebe4;
 }
 
 .button.contact:active {
-  background-color: #0000ff;
-  color: #ffffff;
+  background-color: #ebebe4;
+  color: #0F4F56;
 }
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -142,10 +141,10 @@ a:focus {
 
 /*style the <header> element*/
 header {
-  background-color: #1d7581;
+  background-color: #0F4F56;
   width: 100%;
   padding: 10px 0 4px;
-  border-bottom: 1px solid #1d7581; 
+  border-bottom: 1px solid #0F4F56; 
   position: relative; 
   box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75)
 }
@@ -175,12 +174,12 @@ nav > ul > li > a:visited {
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
-  color: #41bf87;
+  color: #CBCBCF;
   text-decoration: none;
 }
 
 nav > ul > li > a:active {
-  color: #41bf87;
+  color: #ebebe4;
 }
 
 /*Style the hamburger icon*/
@@ -198,6 +197,7 @@ nav > ul > li > a:active {
   top: 2px;
   font-size: 20px;
   padding-right: 0;
+  color: #ebebe4;
 }
 
 .navtoggle.responsive li  {
@@ -212,7 +212,7 @@ nav > ul > li > a:active {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #4a4a4a;
+  border-top: 1px solid #ebebe4;
 }
 
 .navtoggle.responsive li:last-child  {
@@ -220,14 +220,14 @@ nav > ul > li > a:active {
 }
 
 #hero {
-  background-color: #1d7581;
+  background-color: #0F4F56;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
 .phone.contact{
-  color:#0000ff
+  color:#0F4F56
 }
 
 /*Style the social icons*/
@@ -242,6 +242,7 @@ nav > ul > li > a:active {
   width: 32px;
   text-align: center;
   margin: 0px 5px;
+  color: #000000;
 }
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -253,7 +254,7 @@ nav > ul > li > a:active {
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;/* 25px top and bottom, 0 left and right */
 }
 
 #work .row { 
@@ -264,7 +265,6 @@ nav > ul > li > a:active {
 .center {
   text-align: center;
 }
-
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 
@@ -274,22 +274,8 @@ nav > ul > li > a:active {
 @media only screen and (min-width: 640px) { 
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 15px 0 15px;
 
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
-  nav > ul {
-    margin: 1em 0;
-  }
-
-  nav > ul > li {
-    display: inline-block;
   }
 
   #hero span {
@@ -339,6 +325,20 @@ nav > ul > li > a:active {
 
 .logo{
   max-width: 250px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
+nav > ul > li {
+  display: inline-block;
 }
 
 .navtoggle li:not(:last-child) {
